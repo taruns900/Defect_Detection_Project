@@ -1,0 +1,40 @@
+
+
+While running the command 
+
+-> Radon raw eg3.py
+eg3.py
+    LOC: 17
+    LLOC: 17
+    SLOC: 17
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+
+
+-> radon cc -s eg3.py
+eg3.py
+    F 1:0 example3 - B (6)
+
+-> radon hal eg3.py
+eg3.py:
+    h1: 2
+    h2: 4
+    N1: 5
+    N2: 10
+    vocabulary: 6
+    length: 15
+    calculated_length: 10.0
+    volume: 38.77443751081734
+    difficulty: 2.5
+    effort: 96.93609377704335
+    time: 5.385338543169075
+    bugs: 0.012924812503605781
+
+-> radon mi -s eg3.py
+eg3.py - A (61.23)

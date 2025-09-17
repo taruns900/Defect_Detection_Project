@@ -1,16 +1,11 @@
-def add(a, b):
-    return a + b
-#addition done here
-
-def complicated(n):
-    total = 0
-    for i in range(n):
-        if i % 2 == 0:
-            total += i
+def example2(x):
+    if x > 0:
+        if x % 2 == 0:
+            return "Positive Even"
         else:
-            if i % 3 == 0:
-                total -= i
-            else:
-                total += 2 * i
-    return total
-#total caluated here
+            return "Positive Odd"
+    else:
+        if x == 0:
+            return "Zero"
+        else:
+            return "Negative"

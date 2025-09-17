@@ -1,0 +1,38 @@
+While running the command 
+
+-> Radon raw eg2.py
+eg2.py
+    LOC: 26
+    LLOC: 25
+    SLOC: 24
+    Comments: 0
+    Single comments: 1
+    Multi: 0
+    Blank: 1
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+
+
+-> radon cc -s eg2.py
+eg2.py
+    F 1:0 classify_grade - B (7)
+
+-> radon hal eg2.py
+eg2.py:
+    h1: 3
+    h2: 9
+    N1: 7
+    N2: 14
+    vocabulary: 12
+    length: 21
+    calculated_length: 33.28421251514428
+    volume: 75.28421251514429
+    difficulty: 2.3333333333333335
+    effort: 175.66316253533668
+    time: 9.759064585296482
+    bugs: 0.025094737505048096
+
+-> radon mi -s eg2.py
+eg2.py - A (55.15)

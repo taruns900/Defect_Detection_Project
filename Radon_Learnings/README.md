@@ -1,50 +1,90 @@
 # Radon Analysis
 
-This project contains two Python functions (`add` and `complicated`) for demonstration.  
-We analyze the code using [Radon](https://radon.readthedocs.io/).
-
----
-
 ## Commands Used
-
+On running the command:
+### Raw Metrics
 ```bash
 radon raw file_name.py
 ```
+Output example:
 
 file_name.py
-    LOC: 17
-    LLOC: 9
-    SLOC: 9
-    Comments: 2
-    Multi: 0
-    Blank: 2
+    LOC: <Lines of Code>
+    LLOC: <Logical Lines of Code>
+    SLOC: <Source Lines of Code>
+    Comments: <Number of Comment Lines>
+    Multi: <Number of Multi-line Strings>
+    Blank: <Number of Blank Lines>
 
+Where:
+- **LOC**: Lines of Code (total lines in the file)
+- **LLOC**: Logical Lines of Code (statements, not counting comments or blanks)
+- **SLOC**: Source Lines of Code (lines with actual code, excluding comments and blanks)
+- **Comments**: Number of comment lines
+- **Multi**: Number of multi-line strings
+- **Blank**: Number of blank lines
+
+
+
+
+### Cyclomatic Complexity
 ```bash
 radon cc -s file_name.py
 ```
+Output example:
+
 file_name.py
     F 2:0 add - A (1)
     F 5:0 complicated - B (4)
 
+Where:
+- **F**: Function (or M for method, C for class)
+- `2:0`: Line and column where the function starts
+- `add`: Function name
+- `A (1)`: Complexity grade and score (A is simplest, F is most complex)
+
+
 
 file_name.py
+
+### Halstead Metrics
 ```bash
 radon hal file_name.py
 ```
-    h1: 7
-    h2: 10
-    N1: 12
-    N2: 17
-    vocabulary: 17
-    length: 29
-    calculated_length: 33.12
-    volume: 118.51
-    difficulty: 5.95
-    effort: 705.31
 
+Output example:
+    h1: <Number of distinct operators>
+    h2: <Number of distinct operands>
+    N1: <Total occurrences of operators>
+    N2: <Total occurrences of operands>
+    vocabulary: <h1 + h2>
+    length: <N1 + N2>
+    calculated_length: <Estimated program length>
+    volume: <Program volume>
+    difficulty: <Difficulty metric>
+    effort: <Effort metric>
+
+Where:
+- **h1**: Number of distinct operators
+- **h2**: Number of distinct operands
+- **N1**: Total occurrences of operators
+- **N2**: Total occurrences of operands
+- **vocabulary**: h1 + h2
+- **length**: N1 + N2
+- **calculated_length**: Estimated program length
+- **volume**: Program volume
+- **difficulty**: Difficulty metric
+- **effort**: Effort metric
+
+
+### Maintainability Index
 ```bash
 radon mi -s file_name.py
 ```
-file_name.py - MI: 77.45 - C
+Output example:
+file_name.py - MI: score - grade 
+Where:
+- **MI**: Maintainability Index (higher is better)
+- **grade**: Letter grade (A = best, C = worst)
 
 
