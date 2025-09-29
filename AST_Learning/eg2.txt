@@ -1,0 +1,4 @@
+Extract Attributes (Instance Variables)
+
+Attribute Count: 4
+Attributes: ['last_trip', 'make', 'model', 'odometer']

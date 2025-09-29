@@ -1,0 +1,11 @@
+Extract Class Names and Method Count
+
+Class: Vehicle
+  Method Count: 2
+  Methods: start, stop
+Class: Car
+  Method Count: 2
+  Methods: __init__, honk
+Class: Bicycle
+  Method Count: 0
+  Methods: (none)

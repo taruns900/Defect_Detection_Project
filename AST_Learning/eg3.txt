@@ -1,0 +1,8 @@
+
+
+Class Hierarchy: {
+    'LivingBeing': [],
+    'Animal': ['LivingBeing'],
+    'Mammal': ['Animal'],
+    'Dog': ['Mammal']
+}

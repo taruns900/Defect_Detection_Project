@@ -1,0 +1,9 @@
+Putting It All Together – Full Analyzer Function
+
+Metrics:
+{'Class': 'Vehicle', 'Method Count': 2, 'Attribute Count': 2, 'Parents': []}
+{'Class': 'Car', 'Method Count': 2, 'Attribute Count': 1, 'Parents': ['Vehicle']}
+{'Class': 'ElectricCar', 'Method Count': 1, 'Attribute Count': 0, 'Parents': ['Car']}
+
+Hierarchy:
+{'Vehicle': [], 'Car': ['Vehicle'], 'ElectricCar': ['Car']}
