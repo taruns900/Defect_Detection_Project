@@ -1,0 +1,12 @@
+================================================
+  NLOC    CCN  token  PARAM  length  location  
+------------------------------------------------
+     2      1      8      1       2 example.py:simple_function@2-3
+    16     10     70      3      19 example.py:complex_function@5-23
+     2      1      9      1       2 example.py:Vehicle.start@26-27
+     5      3     25      2       7 example.py:Vehicle.drive@29-35
+------------------------------------------------
+
+
+
+#Command should be lizard example.py

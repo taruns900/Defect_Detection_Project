@@ -1,0 +1,5 @@
+File,Function,NLOC,CCN,Params,Length
+Lizards_Learning/example.py,simple_function,2,1,1,2
+Lizards_Learning/example.py,complex_function,16,10,3,19
+Lizards_Learning/example.py,Vehicle.start,2,1,1,2
+Lizards_Learning/example.py,Vehicle.drive,5,3,2,7

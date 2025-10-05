@@ -1,0 +1,28 @@
+Functions found:
+Function: simple_function
+  CCN: 1
+  NLOC: 2
+  Params: 1
+  Length: 2
+  Location: line 2-3
+
+Function: complex_function
+  CCN: 10
+  NLOC: 16
+  Params: 3
+  Length: 19
+  Location: line 5-23
+
+Function: start
+  CCN: 1
+  NLOC: 2
+  Params: 1
+  Length: 2
+  Location: line 26-27
+
+Function: drive
+  CCN: 3
+  NLOC: 5
+  Params: 2
+  Length: 7
+  Location: line 29-35

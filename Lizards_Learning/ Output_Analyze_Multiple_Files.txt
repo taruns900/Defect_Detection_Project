@@ -1,0 +1,5 @@
+File: Lizards_Learning/example.py
+  simple_function -> CCN=1, NLOC=2
+  complex_function -> CCN=10, NLOC=16
+  start -> CCN=1, NLOC=2
+  drive -> CCN=3, NLOC=5
